@@ -1,0 +1,66 @@
+% -------------------- %
+
+\begin{frame}{Performance metrics}
+\framesubtitle{F1-Score}
+
+\begin{itemize}
+    \item measure of a test's accuracy
+    \item considers both the \textbf{Precision} and the \textbf{Recall} to compute the score
+\end{itemize}
+
+$$ Precision=\frac{TP}{TP+FP} $$
+$$ Recall=\frac{TP}{TP+FN} $$
+$$ F_1=2\cdot{}\frac{Precision\cdot{}Recall}{Precision+Recall} $$
+
+\end{frame}
+
+% -------------------- %
+
+\begin{frame}{Performance metrics}
+\framesubtitle{Geometric Mean Error}
+
+\begin{itemize}
+    \item Geometric Mean is the n-th root of the product of n numbers:
+\end{itemize}
+
+$$ \epsilon_{gm}=1-\sqrt{TPR\cdot{}TNR} $$
+
+\begin{itemize}
+    \item True Positive Rate (TPR) or \textbf{Recall} / \textbf{Sensitivity}:
+\end{itemize}
+
+$$ TPR=\frac{TP}{TP+FN} $$
+
+\begin{itemize}
+    \item True Negative Rate (TNR) or \textbf{Specificity}:
+\end{itemize}
+
+$$ TNR=\frac{TN}{TN+FP} $$
+
+\end{frame}
+
+% -------------------- %
+
+\begin{frame}{Performance metrics}
+\framesubtitle{Area Under Curve (AUC)}
+
+\begin{itemize}
+    \item the \textbf{ROC curve} is showing the performance of a classification model by plotting TPR and FPR
+    \item the two-dimensional area underneath the ROC curve from (0,0) to (1,1) is called \textbf{Area Under Curve (AUC)}
+\end{itemize}
+
+\begin{itemize}
+    \item True Positive Rate (TPR) or \textbf{Recall} / \textbf{Sensitivity}:
+\end{itemize}
+
+$$ TPR=\frac{TP}{TP+FN} $$
+
+\begin{itemize}
+    \item False Positive Rate (FPR):
+\end{itemize}
+
+$$ FPR=\frac{FP}{FP+TN} $$
+
+\end{frame}
+
+% -------------------- %
