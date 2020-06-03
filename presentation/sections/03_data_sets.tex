@@ -68,6 +68,7 @@
 % -------------------- %
 
 \begin{frame}{The \enquote{Weather} data set}
+\framesubtitle{Overview}
 
 \begin{itemize}
     \item consists of 18,159 daily readings
@@ -87,6 +88,26 @@
         \item Maximum Temperature (Fahrenheit)
         \item Minimum Temperature (Fahrenheit)
     \end{itemize}
+\end{itemize}
+
+\end{frame}
+
+% -------------------- %
+
+\begin{frame}{The \enquote{Weather} data set}
+\framesubtitle{Analysis}
+
+\begin{itemize}
+    \item no missing values at all
+    \item imperial units were used, so we converted them into metric units during analysis
+    \item all values are floats, so we can easily calculate \textbf{min}, \textbf{max}, \textbf{mean} and \textbf{std} for every value, e.\,g. for the temperature:
+    \begin{itemize}
+        \item min = -24.3 \degc
+        \item max = 33.6 \degc
+        \item mean = 10.6 \degc
+        \item std = 11.7 \degc
+    \end{itemize}
+    \item two major outliers in the \textbf{pressure} column (5503.8 hPa and 5503.1 hPa)
 \end{itemize}
 
 \end{frame}

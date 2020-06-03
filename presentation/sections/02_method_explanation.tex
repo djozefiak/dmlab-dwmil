@@ -6,7 +6,9 @@
 \begin{itemize}
     \item chunk-based incremental learning method
     \item deals with data streams with concept drift and class imbalance problem
-    \item dynamically weights the base classifiers according to their performance on the current data chunk
+    \item creates a base classifier for each chunk 
+    \item weighs them by their performance tested on the current chunk
+    \item a classifier trained recently or on a similar concept will receive a high weight
 \end{itemize}
 
 \end{frame}
@@ -31,7 +33,16 @@
 \framesubtitle{Method explanation}
 
 \begin{itemize}
-    \item ...
+    \item on each data chunk $\mathcal{D}(t)$ at timestamp $t$, a new classifier $H$ is learned
+    \item the new classifier $H$ is merged with $\mathcal{H}(t-1)$ to form the set $\mathcal{H}(t)$
+    \item classifiers are associated with the vector of weights, denoted as 
+        $w^{(t)} = [w_1^{(t)}, ... ,w_m^{(t)}]^T$
+    \item weights measure the importance of the classifiers in the set
+    \item a weight $w_j^{(t)}$ for classifier $H_j^{(t)}$ is reduced on each timestamp
+    \item the adjusted weight is given by 
+        $w_j^{(t)} = (1 - \epsilon_j^{(t)}) \cdot w_j^{(t - 1)}$
+    \item finally, new data $x$ is predicted with
+        $sign(\sum_{j=1}^{m} w_j^{(t)} \cdot H_j^{(t)}(x))$
 \end{itemize}
 
 \end{frame}
