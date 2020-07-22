@@ -30,7 +30,7 @@ According to the authors, DWMIL should perform better on both synthetic and real
 
 ### Wiki
 
-[Wiki-pages](https://github.com/djozefiak/dmlab-dwmil/wiki) contain an analysis of a data set and the implementation description.
+[Wiki-pages](https://github.com/djozefiak/dmlab-dwmil/wiki) contain an analysis of a data set and the method explanation.
 
 ### Reference
 
