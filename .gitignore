@@ -21,3 +21,6 @@ __pycache__/
 # !.vscode/launch.json
 # !.vscode/settings.json
 # !.vscode/tasks.json
+
+## Generated results ##
+results/
