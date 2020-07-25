@@ -1,0 +1,52 @@
+\documentclass[t]{beamer}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{helvet}
+\usepackage[english]{babel}
+
+\usepackage{csquotes}
+\usepackage{textcomp}
+\usepackage{tabularx}
+\usepackage{fontawesome}
+
+\newcommand{\degc}{\textdegree\,C}
+
+\newcommand{\lp}{Learn\textsuperscript{++}}
+\newcommand{\lpn}{Learn\textsuperscript{++}.NIE}
+\newcommand{\lpc}{Learn\textsuperscript{++}.CDS}
+
+\usetheme{luh}
+
+\title{Data Mining Lab: Dynamic Weighted Majority for Incremental Learning}
+\date{July 29, 2020}
+\author{Miena Basta Badres, David Jozefiak}
+
+%\unilogo{\includegraphics[height=\LUHLogoHeight]{luh_logo_rgb}}
+%\logo{\includegraphics[height=\LUHLogoHeight]{department_logo}}
+%\titleimage{\includegraphics[width=.7\paperwidth]{luh_title_image}}
+
+\unilogo{\includegraphics[height=\LUHLogoHeight]{media/logo_luh.png}}
+\logo{\includegraphics[height=\LUHLogoHeight]{media/logo_l3s.jpg}}
+\titleimage{}
+
+\begin{document}
+
+% -------------------- %
+
+\begin{frame}
+\titlepage
+\end{frame}
+
+\input{sections/10_introduction.tex}
+\input{sections/11_method_explanation.tex}
+\input{sections/12_data_sets.tex}
+\input{sections/13_performance_metrics.tex}
+
+\input{sections/20_reproduction.tex}
+\input{sections/21_f1_score.tex}
+\input{sections/22_additions.tex}
+\input{sections/23_competitor.tex}
+\input{sections/24_conclusion.tex}
+
+\end{document}

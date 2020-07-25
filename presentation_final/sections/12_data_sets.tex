@@ -1,0 +1,115 @@
+% -------------------- %
+
+\begin{frame}{Imbalanced streaming data sets}
+\framesubtitle{Real world data sets}
+
+\begin{itemize}
+    \item Weather
+    \begin{itemize}
+        \item weather information of Bellevue in Nebraska
+        \item each day can be classified as \enquote{rainy} or \enquote{not rainy}
+    \end{itemize}
+    \item Electricity
+    \begin{itemize}
+        \item changes of the electricity price of New South Wales in Australia
+    \end{itemize}
+\end{itemize}
+
+\end{frame}
+
+% -------------------- %
+
+\begin{frame}{Imbalanced streaming data sets}
+\framesubtitle{Synthetic data sets}
+
+\begin{itemize}
+    \item Moving Gaussian
+    \begin{itemize}
+        \item consists of two Gaussian distributed classes
+    \end{itemize}
+    \item SEA
+    \begin{itemize}
+        \item contains three attributes ranging from 0 to 10
+        \item only the first two attributes are related to the class
+    \end{itemize}
+    \item Hyper Plane
+    \begin{itemize}
+        \item contains gradually changing decision hyperplane concepts
+    \end{itemize}
+    \item Checkerboard
+    \begin{itemize}
+        \item nonlinear XOR classification problem
+    \end{itemize}
+\end{itemize}
+
+\end{frame}
+
+% -------------------- %
+
+\begin{frame}{Imbalanced streaming data sets}
+\framesubtitle{Further data sets}
+
+\begin{itemize}
+    \item Forest Covertype
+    \begin{itemize}
+        \item contains the cover type for 30 x 30 meter forest cells
+        \item 581,012 instances and 54 attributes
+    \end{itemize}
+    \item Poker Hand
+    \begin{itemize}
+        \item consists of 1,000,000 instances
+        \item each instance represents a hand having five poker playing cards
+        \item each card is described by the attributes suit and rank
+    \end{itemize}
+\end{itemize}
+
+\end{frame}
+
+% -------------------- %
+
+\begin{frame}{The \enquote{Weather} data set}
+\framesubtitle{Overview}
+
+\begin{itemize}
+    \item consists of 18,159 daily readings
+    \begin{itemize}
+        \item 5,698 (31 \%) are classifed as \enquote{rainy}
+        \item the remaining 12,461 (69 \%) are classifed as \enquote{not rainy}
+    \end{itemize}
+    \item missing values were synthetically generated
+    \item 8 weather features
+    \begin{itemize}
+        \item Temperature (Fahrenheit)
+        \item Dew Point (Fahrenheit)
+        \item Sea Level Pressure (hPa)
+        \item Visibility (Miles)
+        \item Average Wind Speed (Knots)
+        \item Maximum Sustained Wind Speed (Knots)
+        \item Maximum Temperature (Fahrenheit)
+        \item Minimum Temperature (Fahrenheit)
+    \end{itemize}
+\end{itemize}
+
+\end{frame}
+
+% -------------------- %
+
+\begin{frame}{The \enquote{Weather} data set}
+\framesubtitle{Analysis}
+
+\begin{itemize}
+    \item no missing values at all
+    \item imperial units were used, so we converted them into metric units during analysis
+    \item all values are floats, so we can easily calculate \textbf{min}, \textbf{max}, \textbf{mean} and \textbf{std} for every value, e.\,g. for the temperature:
+    \begin{itemize}
+        \item min = -24.3 \degc
+        \item max = 33.6 \degc
+        \item mean = 10.6 \degc
+        \item std = 11.7 \degc
+    \end{itemize}
+    \item two major outliers in the \textbf{pressure} column (5503.8 hPa and 5503.1 hPa)
+\end{itemize}
+
+\end{frame}
+
+% -------------------- %
